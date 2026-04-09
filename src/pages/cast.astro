@@ -54,7 +54,7 @@ import Layout from '../layouts/Layout.astro';
         border: 1px solid #444; /* 薄い枠線（霧っぽくなる） */
     }
 
-    /* 3. これまでの main の設定はそのまま... */
+    /* 3. 文字の羅列の設定*/
 
     .cast-container {
         display: flex;
@@ -85,6 +85,15 @@ import Layout from '../layouts/Layout.astro';
         border: 1px solid white;
         padding: 10px 20px;
         margin-top: 40px;
+        display: inline-block;
+        transition: all 0.3s ease;
     }
+
+    a:hover {
+        background-color: white;
+        color: #1a1a1a;
+        letter-spacing: 0.5em; /* キャスト名と同じく広げるとカッコいい */
+    }
+
 </style>
 
