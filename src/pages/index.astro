@@ -28,3 +28,27 @@ import Layout from '../layouts/Layout.astro';
 	</main>
 	<Welcome />
 </Layout>
+
+<style>
+    /* 1. 全体の土台 */
+    main {
+        display: flex;
+        flex-direction: column; /* 縦に並べる */
+        align-items: center;    /* 中央に寄せる */
+        gap: 30px;              /* パーツ同士の隙間をあける */
+        padding: 50px 20px;     /* 上下に余白を作る（これでスクロールしやすくなる） */
+        
+        /* 背景の設定 */
+        background-color: #1a1a1a; /* 背景を暗く（画像を貼るなら後で変更） */
+        color: white;              /* 文字を白く */
+        min-height: 100vh;
+    }
+
+    /* 2. パーツの大きさ調整 */
+    img, iframe {
+        max-width: 90%;         /* 画面からはみ出さない */
+        height: auto;
+        border: 1px solid #444; /* 薄い枠線（霧っぽくなる） */
+    }
+</style>
+
