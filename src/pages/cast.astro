@@ -5,7 +5,20 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="キャスト紹介 | 舞台「霧」">
     <main>
         <h1>CAST</h1>
-        <p>宮下貴浩、私オム ...ほか、出演者の情報をここに書くぞ。</p>
-        <a href="/">トップページへ戻る</a>
+        <section class="cast-list">
+            <div class="cast-item">
+                <img src="/cast-miyasita.jpg" alt="宮下貴浩" />
+                <h2>宮下貴浩</h2>
+                <p>本作の演出・出演。劇団「XXX」主宰...</p>
+            </div>
+
+            <div class="cast-item">
+                <img src="/cast-amu.jpg" alt="私オム" />
+                <h2>私オム</h2>
+                <p>本作の脚本・出演。独創的な世界観を構築する...</p>
+            </div>
+        </section>
+
+        <a href="/" class="back-link">トップページへ戻る</a>
     </main>
 </Layout>
