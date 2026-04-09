@@ -39,7 +39,10 @@ import Layout from '../layouts/Layout.astro';
         padding: 50px 20px;     /* 上下に余白を作る（これでスクロールしやすくなる） */
         
         /* 背景の設定 */
-        background-color: #1a1a1a; /* 背景を暗く（画像を貼るなら後で変更） */
+          background-image: url('/kiri-bg.jpg'); 
+        background-size: cover;               /* 画面いっぱいに広げる */
+        background-position: center;          /* 画像の真ん中を使う */
+        background-attachment: fixed;         /* スクロールしても背景が動かない（これでお洒落になる） */
         color: white;              /* 文字を白く */
         min-height: 100vh;
     }
