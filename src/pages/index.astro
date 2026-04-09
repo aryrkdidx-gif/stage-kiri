@@ -13,7 +13,7 @@ import Layout from '../layouts/Layout.astro';
 　　　<img src="/main-visual.jpg" alt="舞台 霧 メインビジュアル" width="600"/>
 
 <iframe width="100%" style="aspect-ratio: 16/9; max-width:800px"
- src="https://www.youtube.com/embed/k6gJQH00kh0?si=Stv6PiPINJBXONcm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+src="https://www.youtube.com/embed/k6gJQH00kh0?si=Stv6PiPINJBXONcm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
 
 <section class="story-section">
@@ -47,12 +47,13 @@ import Layout from '../layouts/Layout.astro';
         padding: 50px 20px;     /* 上下に余白を作る（これでスクロールしやすくなる） */
         
         /* 背景の設定 */
-          background-image: url('/kiri-bg.jpg'); 
+        background-image: url('/kiri-bg.jpg'); 
         background-size: cover;               /* 画面いっぱいに広げる */
         background-position: center;          /* 画像の真ん中を使う */
         background-attachment: fixed;         /* スクロールしても背景が動かない（これでお洒落になる） */
         color: white;              /* 文字を白く */
         min-height: 100vh;
+		text-align: center;
     }
 
     /* 2. パーツの大きさ調整 */
@@ -92,28 +93,27 @@ import Layout from '../layouts/Layout.astro';
     nav ul {
         list-style: none;
         padding: 0;
+		margin: 0;
     }
-    nav a {
+    
+	nav a {
         color: white;
         text-decoration: none;
         border: 1px solid white;
         padding: 10px 30px;
         display: inline-block;
+		background-color: transparent;
 		transition: all 0.3s ease; /*変化にかかる時間を決める */
-        background-color: transparent; /* 最初は背景透明 */
+	}
     
-	nav ul {
-        list-style: none;
-        padding: 0;
-    }
     
-	nav a:hover {
-        background-color: white; /* 背景を白くする */
+	nav a:hover{
+		background-color: white;
         color: #1a1a1a;          /* 文字を暗い色にする */
         letter-spacing: 0.3em;   /* ついでに文字の間隔を少し広げるとカッコいい */
         cursor: pointer;         /* 指マークにする */
     }
-}
+
 
 </style>
 
