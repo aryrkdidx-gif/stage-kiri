@@ -7,7 +7,6 @@ import Layout from '../layouts/Layout.astro';
         <h1>CAST</h1>
         <section class="cast-list">
             <div class="cast-item">
-                <img src="/cast-miyasita.jpg" alt="宮下貴浩" />
                 <p>赤澤燈</p>
                 <p>松島勇之介</p>
                 <p>定本楓馬</p>
@@ -52,4 +51,28 @@ import Layout from '../layouts/Layout.astro';
         height: auto;
         border: 1px solid #444; /* 薄い枠線（霧っぽくなる） */
     }
+
+    /* 3. これまでの main の設定はそのまま... */
+
+    .cast-container {
+        display: flex;
+        flex-direction: column; /* 縦に並べる */
+        align-items: center;    /* 中央に寄せる */
+        gap: 15px;             /* 名前と名前の間の絶妙な隙間 */
+        margin-top: 30px;
+    }
+
+    .cast-container p {
+        font-size: 1.5rem;      /* 文字を少し大きく */
+        letter-spacing: 0.2em; /* 文字の間隔を広げて「舞台っぽさ」を出す */
+        font-weight: 300;       /* 文字を細くすると繊細な雰囲気が出る */
+    }
+    
+    h1 {
+        border-bottom: 1px solid white; /* 見出しの下に一本線を入れる */
+        padding-bottom: 10px;
+        width: 200px;
+        text-align: center;
+    }
 </style>
+
