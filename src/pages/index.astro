@@ -99,8 +99,21 @@ import Layout from '../layouts/Layout.astro';
         border: 1px solid white;
         padding: 10px 30px;
         display: inline-block;
-        transition: 0.3s; /* マウスを乗せた時にふわっとさせる準備 */
+		transition: all 0.3s ease; /*変化にかかる時間を決める */
+        background-color: transparent; /* 最初は背景透明 */
+    
+	nav ul {
+        list-style: none;
+        padding: 0;
     }
+    
+	 nav a:hover {
+        background-color: white; /* 背景を白くする */
+        color: #1a1a1a;          /* 文字を暗い色にする */
+        letter-spacing: 0.5em;   /* ついでに文字の間隔を少し広げるとカッコいい */
+        cursor: pointer;         /* 指マークにする */
+    }
+}
 
 </style>
 
