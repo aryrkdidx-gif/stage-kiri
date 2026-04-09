@@ -22,8 +22,9 @@ import Layout from '../layouts/Layout.astro';
             </div>
 
         </section>
-
+　　　　<nav>
         <a href="/" class="back-link">トップページへ戻る</a>
+　　　　</nav>
     </main>
 </Layout>
 
@@ -33,8 +34,8 @@ import Layout from '../layouts/Layout.astro';
         display: flex;
         flex-direction: column; /* 縦に並べる */
         align-items: center;    /* 中央に寄せる */
-        gap: 30px;              /* パーツ同士の隙間をあける */
-        padding: 50px 20px;     /* 上下に余白を作る（これでスクロールしやすくなる） */
+        gap: 40px;              /* パーツ同士の隙間をあける */
+        padding: 60px 20px;     /* 上下に余白を作る（これでスクロールしやすくなる） */
         
         /* 背景の設定 */
           background-image: url('/kiri-bg.jpg'); 
@@ -43,6 +44,7 @@ import Layout from '../layouts/Layout.astro';
         background-attachment: fixed;         /* スクロールしても背景が動かない（これでお洒落になる） */
         color: white;              /* 文字を白く */
         min-height: 100vh;
+        text-align: center;          /* 文字自体も中央揃えにする */
     }
 
     /* 2. パーツの大きさ調整 */
@@ -58,21 +60,31 @@ import Layout from '../layouts/Layout.astro';
         display: flex;
         flex-direction: column; /* 縦に並べる */
         align-items: center;    /* 中央に寄せる */
-        gap: 15px;             /* 名前と名前の間の絶妙な隙間 */
+        gap: 20px;             /* 名前と名前の間の絶妙な隙間 */
         margin-top: 30px;
     }
 
     .cast-container p {
         font-size: 1.5rem;      /* 文字を少し大きく */
-        letter-spacing: 0.2em; /* 文字の間隔を広げて「舞台っぽさ」を出す */
+        letter-spacing: 0.3em; /* 文字の間隔を広げて「舞台っぽさ」を出す */
         font-weight: 300;       /* 文字を細くすると繊細な雰囲気が出る */
     }
     
     h1 {
+        font-size: 2.5rem;
         border-bottom: 1px solid white; /* 見出しの下に一本線を入れる */
         padding-bottom: 10px;
         width: 200px;
         text-align: center;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 10px 20px;
+        margin-top: 40px;
     }
 </style>
 
